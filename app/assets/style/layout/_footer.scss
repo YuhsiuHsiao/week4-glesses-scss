@@ -45,11 +45,6 @@ footer {
 
 .copyright {
     padding: 28px 0;
-
-    ul {
-        margin: 0 -24px;
-    }
-
     li {
         padding: 0 24px;
     }
@@ -77,10 +72,6 @@ footer {
 }
 
 @media (max-width:767px) {
-    .community img {
-        width: 24px;
-        margin-left: 8px;
-    }
 
     footer {
         padding-top: 24px;
@@ -94,6 +85,10 @@ footer {
             justify-content: space-between;
             align-items: flex-start;
         }
+        .community img {
+            width: 24px;
+            margin-left: 8px;
+        }
 
         .contact {
             margin: 0;
@@ -101,8 +96,8 @@ footer {
             line-height: 24px;
             padding-bottom: 16px;
 
-            .contact img {
-                width: 18px;
+            img {
+                width: 24px;
             }
         }
     }
@@ -127,6 +122,7 @@ footer {
     .copyright li {
         font-size: 16px;
         line-height: 24px;
+        padding: 0;
     }
 }
 

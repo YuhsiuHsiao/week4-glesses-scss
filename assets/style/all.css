@@ -141,7 +141,7 @@ a {
   text-decoration: none; }
 
 body {
-  font-family: 'Noto Sans TC', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', "Microsoft JhengHei", "Helvetica Meue", sans-serif; }
+  font-family: 'Roboto', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', "Microsoft JhengHei", "Helvetica Meue", sans-serif; }
 
 .text-white {
   color: #fff; }
@@ -218,10 +218,10 @@ body {
   text-align: justify; }
 
 .w-100 {
-  max-width: 100%; }
+  width: 100%; }
 
 .w-50 {
-  max-width: 50%; }
+  width: 50%; }
 
 .p-0 {
   padding: 0; }
@@ -391,23 +391,23 @@ body {
   text-decoration: none; }
 
 .container {
-  max-width: 1368px;
   margin: 0 auto;
-  padding: 0 36px; }
+  padding: 0 12px;
+  max-width: 1320px; }
 
 @media (max-width: 992px) {
   .container {
-    max-width: 100%; } }
+    padding: 0 36px; } }
 
 @media (max-width: 767px) {
   .container {
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
     padding: 0; }
   .menu {
-    max-width: 100%; }
+    width: 100%; }
   .menu-item {
-    max-width: 50%; } }
+    width: 50%; } }
 
 .bg-block-red {
   background-color: #AA0601; }
@@ -488,8 +488,6 @@ footer .contact {
 
 .copyright {
   padding: 28px 0; }
-  .copyright ul {
-    margin: 0 -24px; }
   .copyright li {
     padding: 0 24px; }
 
@@ -507,9 +505,6 @@ footer .contact {
     line-height: 24px; } }
 
 @media (max-width: 767px) {
-  .community img {
-    width: 24px;
-    margin-left: 8px; }
   footer {
     padding-top: 24px;
     padding-left: 14px;
@@ -529,13 +524,16 @@ footer .contact {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start; }
+    footer .community img {
+      width: 24px;
+      margin-left: 8px; }
     footer .contact {
       margin: 0;
       font-size: 16px;
       line-height: 24px;
       padding-bottom: 16px; }
-      footer .contact .contact img {
-        width: 18px; }
+      footer .contact img {
+        width: 24px; }
   .webmap {
     display: none; }
   .copyright {
@@ -550,7 +548,8 @@ footer .contact {
             flex-direction: column; }
   .copyright li {
     font-size: 16px;
-    line-height: 24px; } }
+    line-height: 24px;
+    padding: 0; } }
 
 .copyright {
   border-top: 1px solid #fff; }
@@ -836,6 +835,8 @@ footer .contact {
   padding-left: 12px;
   padding-right: 12px;
   font-family: roboto, 'Noto Sans TC'; }
+  .prod-card h3 {
+    font-weight: normal; }
 
 .color-box {
   width: 24px;
@@ -939,11 +940,6 @@ select {
     line-height: 36px;
     padding: 8px 24px;
     border: 1px solid #00000020; }
-  .store-content ul {
-    padding: 16px 24px;
-    border: 1px solid #00000020; }
-  .store-content li {
-    margin-bottom: 8px; }
   .store-content a {
     color: #212529; }
   .store-content .card-footer {
@@ -952,7 +948,8 @@ select {
     padding: 16px;
     text-align: center;
     color: #fff;
-    background-color: #000; }
+    background-color: #000;
+    display: block; }
 
 .store-card {
   width: 33.3333%;
@@ -963,6 +960,11 @@ select {
           box-shadow: none;
   border: 0px;
   margin-bottom: 48px; }
+  .store-card ul {
+    padding: 16px 24px;
+    border: 1px solid #00000020; }
+  .store-card li {
+    margin-bottom: 8px; }
 
 @media (max-width: 992px) {
   .store-card {
